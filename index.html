@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reda | Online Store</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="top_header">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.png">
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="nav_menu">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+
+            <!-- SEARCH INPUT (عادي مش منبثق) -->
+            <div class="search_box">
+                <input type="text" id="search_input" placeholder="Search products...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- CART -->
+            <div class="cart_button">
+                
+                <a href="cart.html" class="cart_link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </a>
+
+                <span class="count" id="cart_count">0</span>
+   
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- ================= SEARCH RESULTS OVERLAY ================= -->
+<div id="search_results" class="search_results"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="container">
+        <h1>🔥 Best Online Store</h1>
+        <p>Shop the latest products with best prices</p>
+        <a href="product.html" class="hero_btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<main>
+
+    <section class="products_section container">
+
+        <h2>🔥 Latest Products</h2>
+
+        <div class="products_grid" id="products_container">
+
+            <div class="product_card">
+                <img src="img/banner3_1.png">
+                <h3>Smart Watch</h3>
+                <p>$50</p>
+                <button onclick="addToCart('Smart Watch', 50)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product_card">
+                <img src="img/banner3_2.png">
+                <h3>Headphones</h3>
+                <p>$30</p>
+                <button onclick="addToCart('Headphones', 30)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product_card">
+                <img src="img/banner3_3.png">
+                <h3>Phone</h3>
+                <p>$200</p>
+                <button onclick="addToCart('Phone', 200)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
